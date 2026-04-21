@@ -10,12 +10,12 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     { name: "Pricing", href: "/pricing" },
     { name: "Contact", href: "/contact" },
+    { name: "Refund Policy", href: "/refund" }
   ];
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg">
       <div className="mx-auto max-w-6xl flex items-center justify-between px-6 py-4">
-        
         {/* Logo */}
         <Link
           href="/"
@@ -34,9 +34,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={`relative text-sm font-medium transition ${
-                  isActive
-                    ? "text-black"
-                    : "text-gray-500 hover:text-black"
+                  isActive ? "text-black" : "text-gray-500 hover:text-black"
                 }`}
               >
                 {item.name}
