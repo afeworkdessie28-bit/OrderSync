@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import "./globals.css";
+import Navbar from "@/cmpnts/navebar";
 
 export const metadata = {
   title: "ScriptForge AI — Viral short-form video scripts",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="h-full">
       <body className="min-h-screen bg-slate-950 text-slate-100 antialiased">
+      <Navbar />
         {children}
       </body>
     </html>
